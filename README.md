@@ -4,7 +4,7 @@ This web application is designed to process and analyze flight data using **Djan
 
 ## Features :
 
-# Upload CSV files for sales analysis  
+# Upload CSV files for analysis  
 # Filter data by multiple criteria (e.g., Date, City, Product Category)  
 # Visualize insights using interactive charts  
 # Integrated with MySQL for data storage  
