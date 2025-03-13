@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Data Analysis Results</h1>
+
+    <h2>Average Flight Price: {{ avg_price }}</h2>
+
+    <h2>Flight Counts by Airline:</h2>
+    <ul>
+        {% for airline, count in flight_counts.items %}
+            <li>{{ airline }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if airline_plot %}
+        <h2>Flights by Airline</h2>
+        <img src="/media/visualizations/airline_counts.png" alt="Airline Flight Counts">
+    {% endif %}
+
+    {% if price_plot %}
+        <h2>Price Distribution</h2>
+        <img src="/media/visualizations/price_distribution.png" alt="Price Distribution">
+    {% endif %}
+</body>
+</html>
